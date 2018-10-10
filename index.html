@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Countdown</title>
+    <!-- <title>Countdown</title> -->
+    <title>310倒數器</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.javascript"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Builds.json");
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Builds.json", {onProgress: UnityProgress});
     </script>
-  </head>
-  <body>
-    <div id="gameContainer" style="width: 1000px; height: 800px; margin: auto"></div>
-  </body>
+</head>
+<body>
+<div class="webgl-content">
+    <div id="gameContainer" style="width: 960px; height: 600px"></div>
+</div>
+<div class="simmer">
+    Version <a href="" target="_blank">1.0</a><br>
+    WEBGL support by: <a href="https://simmer.io" target="_blank">SIMMER.io</a><br>
+    DEVELOPED by: <a href="" target="_blank">J.C.★YIS</a>
+</div>
+<script src="TemplateData/responsive.javascript"></script>
+</body>
 </html>

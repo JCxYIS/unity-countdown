@@ -113,9 +113,9 @@ public class JumpingNumberTextComponent : MonoBehaviour
         StartCoroutine("DoJumpNumber");  
     }
 
-    public void ChangeTo(int to)
+    public void ChangeTo(int to, bool forceUpdate)
     {
-        if(_toNumber == to) return;
+        if(_toNumber == to && !forceUpdate) return;
         else
         {
             if(to > _curNumber && to < _curNumber + 100)
@@ -127,7 +127,7 @@ public class JumpingNumberTextComponent : MonoBehaviour
                 Change(to + 1, to);
             }
             else
-            Change(_curNumber, to);
+                Change(_curNumber, to);
         }
     }
 

@@ -18,6 +18,7 @@ public class timer : MonoBehaviour {
 	public JumpingNumberTextComponent secff;
 	public Text timeformator;
 	public Transform mainDisplays;
+	bool firstFrame = true;
 
 	/// <summary>
 	/// Start is called on the frame when a script is enabled just before
@@ -40,19 +41,20 @@ public class timer : MonoBehaviour {
 		if(!isUsedAsClock)
 		{
 			TimeSpan mySpan = myDestTime.Subtract(DateTime.Now);
-			day.ChangeTo(mySpan.Days);
-			hr.ChangeTo(mySpan.Hours);
-			min.ChangeTo(mySpan.Minutes);
-			sec.ChangeTo(mySpan.Seconds);
-			secff.ChangeTo(mySpan.Milliseconds / 10);
+			day.ChangeTo(mySpan.Days, firstFrame);
+			hr.ChangeTo(mySpan.Hours, firstFrame);
+			min.ChangeTo(mySpan.Minutes, firstFrame);
+			sec.ChangeTo(mySpan.Seconds, firstFrame);
+			secff.ChangeTo(mySpan.Milliseconds / 10, firstFrame);
 			//Debug.Log(mytime.Milliseconds);
 		}
 		else
 		{
-			day.ChangeTo(DateTime.Now.Month*100+DateTime.Now.Day);
-			hr.ChangeTo(DateTime.Now.Hour);
-			min.ChangeTo(DateTime.Now.Minute);
-			sec.ChangeTo(DateTime.Now.Second);
+			day.ChangeTo(DateTime.Now.Month*100+DateTime.Now.Day, firstFrame);
+			hr.ChangeTo(DateTime.Now.Hour, firstFrame);
+			min.ChangeTo(DateTime.Now.Minute, firstFrame);
+			sec.ChangeTo(DateTime.Now.Second, firstFrame);
 		}
+		firstFrame = false;
 	}
 }

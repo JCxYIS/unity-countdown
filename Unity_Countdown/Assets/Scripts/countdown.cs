@@ -32,7 +32,9 @@ public class countdown: MonoBehaviour {
 
 	void Start() 
 	{
+		//Screen.fullScreen = true;
 		instance = this;
+		GameObject clock = Instantiate(Resources.Load<GameObject>("Prefabs/clock"), stage);
 		for(int i = 0; i < setTimers.Count; i++)
 		{
 			setTimers[i].destTime = setTimer_destTime[i];
