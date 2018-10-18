@@ -233,6 +233,8 @@ MonoBehaviour:
     color: {r: 0.040607214, g: 1, b: 0, a: 1}
   - name: "\u6307\u8003\u5012\u6578"
     color: {r: 0.11792451, g: 0.9746103, b: 1, a: 1}
+  - name: 222
+    color: {r: 0.11792451, g: 0.9746103, b: 1, a: 1}
   runTimers: []
 --- !u!4 &566203404
 Transform:

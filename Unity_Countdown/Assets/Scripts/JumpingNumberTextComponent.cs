@@ -118,7 +118,7 @@ public class JumpingNumberTextComponent : MonoBehaviour
         if(_toNumber == to && !forceUpdate) return;
         else
         {
-            if(to > _curNumber && to < _curNumber + 100)
+            if(to > _curNumber+2 && to < _curNumber + 100)
             {
                 Change(to + 1, to);
             }
