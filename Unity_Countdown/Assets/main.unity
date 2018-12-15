@@ -226,15 +226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stage: {fileID: 1241846046}
-  setTimers:
-  - name: "\u5317\u6A21(II)\u5012\u6578"
-    color: {r: 1, g: 0.09365801, b: 0.0141509175, a: 1}
-  - name: "\u5B78\u6E2C\u5012\u6578"
-    color: {r: 0.040607214, g: 1, b: 0, a: 1}
-  - name: "\u6307\u8003\u5012\u6578"
-    color: {r: 0.11792451, g: 0.9746103, b: 1, a: 1}
-  - name: 222
-    color: {r: 0.11792451, g: 0.9746103, b: 1, a: 1}
   runTimers: []
 --- !u!4 &566203404
 Transform:
@@ -403,7 +394,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1241846045}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -412,8 +403,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 30.2, y: 0}
-  m_SizeDelta: {x: -140.4, y: -80}
+  m_AnchoredPosition: {x: 30, y: 0}
+  m_SizeDelta: {x: -140, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1241846047
 MonoBehaviour:
